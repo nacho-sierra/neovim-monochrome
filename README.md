@@ -13,16 +13,14 @@ Install using your favourite package manager:
 
 ```lua
 return {
-    "rose-pine/neovim",
-    name = "rose-pine",
+    "your-username/neovim-monochrome",
+    name = "monochrome",
     config = function()
         require("rose-pine").setup({
-            -- Monochrome is enabled by default
-            -- You can customize the colors:
-            monochrome_black = "#1a1a1a",  -- Background, dark elements
-            monochrome_white = "#e8e8e8",  -- Text, light elements
+            monochrome_black = "#151515",
+            monochrome_white = "#f0f0f0",
         })
-        vim.cmd("colorscheme rose-pine")
+        vim.cmd("colorscheme monochrome")
     end
 }
 ```
