@@ -13,7 +13,7 @@ Install using your favourite package manager:
 
 ```lua
 return {
-    "your-username/neovim-monochrome",
+    "nacho-sierra/neovim-monochrome",
     name = "monochrome",
     config = function()
         require("rose-pine").setup({
@@ -56,7 +56,7 @@ require("rose-pine").setup({
     },
 })
 
-vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme monochrome")
 ```
 
 ### How It Works
