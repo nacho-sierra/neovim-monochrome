@@ -6,31 +6,35 @@ if config.options.styles.transparency then
 	bg_base = "NONE"
 end
 
+-- All modes use the same monochrome color scheme
+-- The visual distinction comes from text styling (bold/italic)
+-- rather than color differences in monochrome mode
+
 return {
 	normal = {
-		a = { bg = p.rose, fg = p.base, gui = "bold" },
-		b = { bg = p.overlay, fg = p.rose },
-		c = { bg = bg_base, fg = p.text },
+		a = { bg = p.overlay, fg = p.text, gui = "bold" },
+		b = { bg = p.surface, fg = p.subtle },
+		c = { bg = bg_base, fg = p.muted },
 	},
 	insert = {
-		a = { bg = p.foam, fg = p.base, gui = "bold" },
-		b = { bg = p.overlay, fg = p.foam },
-		c = { bg = bg_base, fg = p.text },
+		a = { bg = p.overlay, fg = p.text, gui = "bold" },
+		b = { bg = p.surface, fg = p.subtle },
+		c = { bg = bg_base, fg = p.muted },
 	},
 	visual = {
-		a = { bg = p.iris, fg = p.base, gui = "bold" },
-		b = { bg = p.overlay, fg = p.iris },
-		c = { bg = bg_base, fg = p.text },
+		a = { bg = p.overlay, fg = p.text, gui = "bold" },
+		b = { bg = p.surface, fg = p.subtle },
+		c = { bg = bg_base, fg = p.muted },
 	},
 	replace = {
-		a = { bg = p.pine, fg = p.base, gui = "bold" },
-		b = { bg = p.overlay, fg = p.pine },
-		c = { bg = bg_base, fg = p.text },
+		a = { bg = p.overlay, fg = p.text, gui = "bold" },
+		b = { bg = p.surface, fg = p.subtle },
+		c = { bg = bg_base, fg = p.muted },
 	},
 	command = {
-		a = { bg = p.love, fg = p.base, gui = "bold" },
-		b = { bg = p.overlay, fg = p.love },
-		c = { bg = bg_base, fg = p.text },
+		a = { bg = p.overlay, fg = p.text, gui = "bold" },
+		b = { bg = p.surface, fg = p.subtle },
+		c = { bg = bg_base, fg = p.muted },
 	},
 	inactive = {
 		a = { bg = bg_base, fg = p.muted, gui = "bold" },

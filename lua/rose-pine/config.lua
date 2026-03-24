@@ -23,6 +23,16 @@ config.options = {
 	---border characters you are using.
 	extend_background_behind_borders = true,
 
+	---Monochrome mode - use only two colors (off-black and off-white)
+	---When enabled, all colors are derived from monochrome_black and monochrome_white
+	monochrome = true,
+
+	---Off-black color for monochrome mode (background, dark elements)
+	monochrome_black = "#1a1a1a",
+
+	---Off-white color for monochrome mode (text, light elements)
+	monochrome_white = "#e8e8e8",
+
 	enable = {
 		legacy_highlights = true,
 		migrations = true,
