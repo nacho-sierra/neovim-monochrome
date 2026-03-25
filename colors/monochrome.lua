@@ -1,3 +1,4 @@
+package.loaded["rose-pine"] = nil
 package.loaded["rose-pine.palette"] = nil
 package.loaded["rose-pine.config"] = nil
 require("rose-pine").setup({
